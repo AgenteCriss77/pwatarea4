@@ -1,0 +1,132 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Encabezados */
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Contenedores */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Formularios */
+form {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button, .button {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover, .button:hover {
+    background: #45a049;
+}
+
+/* Lista de tareas */
+.tareas-lista {
+    list-style: none;
+}
+
+.tarea {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 4px;
+    border-left: 4px solid #4CAF50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarea.completada {
+    text-decoration: line-through;
+    color: #888;
+    border-left-color: #888;
+}
+
+/* Mensajes de error y éxito */
+.error, .success {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.error {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+}
+
+.success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+}
+
+/* Enlaces */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #45a049;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .tarea {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    button, .button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
